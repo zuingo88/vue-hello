@@ -1,0 +1,57 @@
+body {
+  background-color: darkslateblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+  background-color: teal;
+  border: solid 2px black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.pi {
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+
+.pi:hover {
+  scale: 1.2;
+}
+
+.red {
+  color: red;
+  background-color: beige;
+}
+
+.green {
+  color: green;
+  background-color: beige;
+}
+
+.btn {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 3px white;
+  border-radius: 8px;
+  color: black;
+  background-color: coral;
+}
+
+.btn:hover {
+  border: solid 3px coral;
+  background-color: white;
+}
