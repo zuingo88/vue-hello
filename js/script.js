@@ -6,15 +6,25 @@ function initVue() {
     el: "#app",
     data: {
       msg: "Titolo",
-      paragrafo: '',
+      paragrafo: "",
       immagine: "img/verdena20.png",
     },
     methods: {
       change: function () {
-        this.msg = "Nuovo titolo!";
-        this.paragrafo = 'Ta-daaaaa!'
-        this.immagine = "img/palletto.png";
-      }
+        if (
+          this.msg == "Titolo" &&
+          this.immagine == "img/verdena20.png" &&
+          this.paragrafo == ""
+        ) {
+          this.msg = "Nuovo titolo!";
+          this.paragrafo = "Ta-daaaaa!";
+          this.immagine = "img/palletto.png";
+        } else {
+          this.msg = "Titolo";
+          this.paragrafo = "";
+          this.immagine = "img/verdena20.png";
+        }
+      },
     },
   });
 }
