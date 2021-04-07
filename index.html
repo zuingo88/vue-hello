@@ -19,8 +19,9 @@
     <div id="app" class="container">
       <h1>{{ msg }}</h1>
       <p class="pi">{{paragrafo}}</p>
-      <button class="btn" @click="change">click</button>
-      <img width:90px height:70px :src="immagine" />
+      <button class="btn" @click="flip">click</button>
+      <img width="200px" height="170px" v-if="firstImg" :src="immagine1" />
+      <img width="200px" height="170px" v-else="" :src="immagine2" />
     </div>
   </body>
 </html>
